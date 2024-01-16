@@ -1,0 +1,25 @@
+
+name: Deploy to Surge
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  runMultipleCommands:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+    # Install Dependencies
+      - name: Install dependencies
+        run: npm install
+
+    # Build projects
+    - name: Deploy
+      run: npm install --global surge && surge ./ --domain joao-via-papo.surge.sh --token 6e5d7f8bfa84810e66480e604e8522d8
