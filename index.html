@@ -1,16 +1,222 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 
-<html lang="pt-br">
-  <head>
-    <title>Projeto Portfólio QA</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-  </head>
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- title -->
+  <title>João Portfólio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/extends.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
 
-  <body>
-    <h1>Projeto Portfólio QA</h1>
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar__content max-width mb-0">
+      <a href="/">
+        <img src="assets/qa.svg" alt="João Martins" />
+      </a>
+      <ul class="navbar__links">
+        <li><a href="#header">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#footer">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <img src="images/loading.gif" alt="Site Em desenvolvimento">
-  </body>
+  <!-- header -->
+  <header id="header" class="max-width">
+    <div class="header__left">
+      <h1>Olá! Sou João Martins, QA Especialista</h1>
+      <p>
+        Sou graduado em Ciência da Computação pela Universidade Técnologica Federal
+        do Paraná (UTFPR) e possuo mais de 5 anos de experiência em testes de software.
+        Atuei inicialmente como desenvolvedor FullStack em Java Spring Boot de backend
+        e React como frontend, e atualmente atuo como QA Especialista em automação de testes de
+        performance com K6 e JMeter.
+      </p>
+      <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+    </div>
+    <div class="header__right">
+      <div class="header__image">
+        <img src="assets/joao-martins.jpg" alt="João Martins" class="joao" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section id="about" class="about max-width">
+    <div class="about__left">
+      <h2 class="secondary-title">Além do código: quem sou eu?</h2>
+      <p>
+        Quer saber mais sobre mim? Segue em algumas das redes sociais
+      </p>
+      <ul>
+        <li>
+          <a href="#"><img src="assets/instagram.svg" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/joaomartinsfilho/"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/facebook.svg" alt="Facebook" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="about__right">
+      <h3 class="tertiary-title mb-m">
+        QA Especialista
+      </h3>
+      <p>
+        Olá, meu nome é João Martins e sou QA Especialista de Performance no Grupo Casas Bahia.
+        Minha primeira experiência profissional foi em 2018, como desenvolvedor FullStack em Java Spring Boot e React.
+        Após essa experiência, migrei para área de Qualidade, atuando como QA Ops na qual meu objetivo era criar
+        pipelines
+        de testes automatizados e ensinar os QAs que antes atuavam como testers manuais para automatizar com Cypress e
+        Cucumber.
+      </p>
+      <p>Após essas experiências, atuei como QA Engenheiro Sênior na Take Blip, na qual desempenhei o papel de QA
+        voltado para checkout e transação por chatbot. Em 2022, atuei como QA Tech Lead na Wiser Educação, onde
+        apliquei todo meu conhecimento adquirido para estruturar um time de qualidade baseado em Testes Ágeis.
+      </p>
+      <p>Atualmente estou no Grupo Casas Bahia como QA Especialista de Performance com a ferramente de testes K6.</p>
+      <p>
+        Meu principal hobbie é leitura e escrever para minha newsletter voltado para tecnologia e qualidade de software.
+      </p>
+      <p>Na seção abaixo, você irá conhecer alguma das minhas principais skills.</p>
+    </div>
+  </section>
+
+  <!-- habilidades -->
+  <section id="skills" class="skills">
+    <div class="skills__content max-width">
+      <h2 class="tertiary-title">Minhas skills</h2>
+      <p class="description">
+        Abaixo estão algumas das minhas principais habilidades e ferramentas que utilizo no meu dia a dia.
+      </p>
+      <ul>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="assets/notebook.png" alt="k6" />
+          </div>
+          <h3>K6</h3>
+          <p>
+            Ferramenta de Testes de performance que tem como objetivo simular usuários
+            concorrentes em uma aplicação web.
+          </p>
+        </li>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="assets/notebook.png" alt="cypress" />
+          </div>
+          <h3>Cypress</h3>
+          <p>
+            Ferramenta de testes end-to-end e API, sendo muito utilizado para simular acessos de usuário em navegador
+            com visualização de possíveis erros e bugs em um fluxo end-to-end.
+          </p>
+        </li>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="assets/phone.png" alt="Appium" />
+          </div>
+          <h3>Appium</h3>
+          <p>
+            Ferramenta de Testes end-to-end para aplicativos mobile, sendo muito utilizado para simular acessos de
+            usuário
+            em um aplicativo mobile.
+          </p>
+        </li>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="assets/phone.png" alt="AWS e Gitlab/Github" />
+          </div>
+          <h3>Criação de Pipelines Gitlab e Github</h3>
+          <p>
+            Conhecimento a respeito de criar pipelines de testes automatizados em ferramentas como Gitlab e Github.
+          </p>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="assets/files.png" alt="Comunicação" />
+          </div>
+          <h3>Comunicação</h3>
+          <p>
+            Conhecimento em comandos de terminal para execução de scripts e
+            automação de tarefas.
+          </p>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="assets/files.png" alt="Terminal" />
+          </div>
+          <h3>Trabalho em Equipe</h3>
+          <p>
+            Atuei em times multidisciplinares e como líder com foco em estruturar e desenvolver uma cultura
+            de qualidade de software.
+          </p>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="assets/files.png" alt="Terminal" />
+          </div>
+          <h3>Proativa</h3>
+          <p>
+            Acredito que a proatividade é uma das principais habilidades para um QA, pois é necessário para 
+            que possamos atuar em várias frentes e sempre aperfeiçoar nosso conhecimento
+          </p>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="assets/files.png" alt="Terminal" />
+          </div>
+          <h3>Aprendizado Contínuo</h3>
+          <p>
+            Aprender é minha principal habilidade, pois acredito que a tecnologia está em constante evolução e
+            precisamos estar sempre atualizados.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer__content max-width mb-0">
+      <h2 class="tertiary-title mb-s">Contato</h2>
+      <p class="mb-m">
+        Caso tenha mais dúvidas a respeito do meu portfólio, entre em contato pelo email,
+        telefone ou redes sociais abaixo.
+      </p>
+      <div class="footer__contact mb-m">
+        <span class="mb-m">joao.queiroz@grupocasasbahia.com.br</span>
+        <span>00 00000-0000</span>
+      </div>
+      <ul class="mb-l">
+        <li>
+          <a href="#"><img src="assets/instagram.svg" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/joaomartinsfilho/"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/facebook.svg" alt="Facebook" /></a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        © 2024 João Martins. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+  <!-- script -->
+  <!-- <script src="scripts/index.js"></script> -->
+</body>
 
 </html>
